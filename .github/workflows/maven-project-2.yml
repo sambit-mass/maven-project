@@ -2,7 +2,7 @@ name: Maven CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "maven-2" ]
 
 jobs:
   build:
@@ -22,4 +22,4 @@ jobs:
         run: mvn clean package
 
       - name: Run JAR (like Jenkins deploy stage)
-        run: java -jar target/MavenProject-v2.jar
+        run: java -jar target/java-project2-1.8.jar
